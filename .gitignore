@@ -1,1 +1,2 @@
-/cv-venv
+/.venv/
+__pycache__/

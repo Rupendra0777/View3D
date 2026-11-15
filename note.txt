@@ -1,0 +1,21 @@
+Project overview
+This project aims to estimate a sparse 3D point cloud from two images of the same object taken from slightly different viewpoints. 
+In our case, the object is a hardcover book.
+
+How it works
+The reconstruction program will:
+
+Load both images.
+Find distinctive visual details in each image.
+Match details that appear in both views.
+Estimate how the viewpoint changed between images.
+Use the matched details to estimate 3D points.
+Save those points as a .ply file that can be opened in a 3D viewer.
+In simple terms: details that shift between the two views help the program estimate how far away they are.
+
+Beginner-friendly plan
+We can build the project in small stages: first load and display the images, 
+then find and visualize matches, then estimate 3D points, and finally save the .ply output. 
+This way, each step is understandable and we can see where a problem occurs.
+
+to display in the terminal python {src/match_features.py --no-display}
